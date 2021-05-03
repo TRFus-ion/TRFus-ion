@@ -8,6 +8,9 @@
 })(["https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"],window,function(){
   return (function(){
     alert($);
-//     $("body").append("");
+      $("head").append(`
+       <ul>
+         <li>sheesh</li>
+       </ul>`);
   })()
 });
