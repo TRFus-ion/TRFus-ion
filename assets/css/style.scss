@@ -1,1 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
+$header-padding: 12px;
+$font: "quicksand";
+
+* {
+  font-family: $font, sans-serif;
+}
+
+header {
+  min-width: 600px;
+  user-select: none;
+  overflow: hidden;
+  background: #dfe4ea;
+  border-radius: 0.4pc;
+  min-height: 1.5rem;
+  padding: 5px 1px;
+
+  #logo {
+    display: inline-block;
+    vertical-align: middle;
+    padding: $header-padding;
+    background: transparent;
+  }
+
+  div {
+    float: right;
+    display: inline-block;
+    white-space: nowrap;
+    word-spacing: -1em;
+
+    hr {
+      display: inline-block;
+      width: 30px;
+    }
+
+    a {
+      float: left;
+      text-align: center;
+      padding: $header-padding;
+      text-decoration: none;
+      cursor: default;
+
+      :active {
+        color: red;
+      }
+    }
+  }
+}
+
+body {
+  background: #f5f6fa;
+}
+
+footer {
+  visibility: hidden;
+} /* Just for now :) */
