@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-$header-padding: 12px;
-$font: "quicksand";
-
 * {
-  font-family: $font, sans-serif;
+  font-family: "quicksand", sans-serif;
 }
 
 header {
@@ -15,43 +12,37 @@ header {
   border-radius: 0.4pc;
   min-height: 1.5rem;
   padding: 5px 1px;
-
-  #logo {
-    display: inline-block;
-    vertical-align: middle;
-    padding: $header-padding;
-    background: transparent;
-  }
-
-  div {
-    float: right;
-    display: inline-block;
-    white-space: nowrap;
-    word-spacing: -1em;
-
-    hr {
-      display: inline-block;
-      width: 30px;
-    }
-
-    a {
-      float: left;
-      text-align: center;
-      padding: $header-padding;
-      text-decoration: none;
-      cursor: default;
-
-      :active {
-        color: red;
-      }
-    }
-  }
 }
-
+header #logo {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 12px;
+  background: transparent;
+}
+header div {
+  float: right;
+  display: inline-block;
+  white-space: nowrap;
+  word-spacing: -1em;
+}
+header div hr {
+  display: inline-block;
+  width: 30px;
+}
+header div a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  cursor: default;
+}
+header div a :active {
+  color: red;
+}
 body {
   background: #f5f6fa;
 }
-
 footer {
   visibility: hidden;
-} /* Just for now :) */
+}
+/* Just for now :) */
